@@ -1,26 +1,11 @@
-// ===============================
-// FEMALE SPACE - MAIN JAVASCRIPT
-// ===============================
-
 document.addEventListener("DOMContentLoaded", () => {
-
-    // ===============================
-    // MOBILE MENU
-    // ===============================
-
     const menuBtn = document.querySelector(".menu-btn");
     const navLinks = document.querySelector(".nav-links");
-
     if (menuBtn && navLinks) {
         menuBtn.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
     }
-
-
-    // ===============================
-    // PRODUCT SEARCH
-    // ===============================
 
     const searchInput = document.querySelector("#searchInput");
     const products = document.querySelectorAll(".product-card");
@@ -51,10 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // ===============================
-    // CATEGORY FILTER
-    // ===============================
-
     const filterButtons = document.querySelectorAll(".filter-btn");
 
     filterButtons.forEach(button => {
@@ -82,10 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-
-    // ===============================
-    // SORT PRODUCTS
-    // ===============================
 
     const sortSelect = document.querySelector("#sortProducts");
 
@@ -137,11 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-
-    // ===============================
-    // FAVORITE BUTTON
-    // ===============================
-
     const favoriteButtons =
         document.querySelectorAll(".favorite-btn");
 
@@ -158,11 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-
-
-    // ===============================
-    // ADD TO CART
-    // ===============================
 
     const cartButtons =
         document.querySelectorAll(".add-cart");
@@ -192,11 +159,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-
-    // ===============================
-    // SCROLL TO TOP
-    // ===============================
-
     const topButton =
         document.querySelector("#scrollTop");
 
@@ -221,10 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-
-    // ===============================
-    // NAVIGATION
-    // ===============================
 
     const links =
         document.querySelectorAll('a[href^="#"]');
