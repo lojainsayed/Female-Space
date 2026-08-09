@@ -1,7 +1,3 @@
-/* =========================
-   FEMALE SPACE - MAIN STYLE
-   ========================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
@@ -32,10 +28,6 @@ body {
     color: var(--dark);
     line-height: 1.6;
 }
-
-/* =========================
-   NAVBAR
-   ========================= */
 
 .navbar {
     width: 100%;
@@ -88,10 +80,6 @@ body {
 .nav-links a:hover {
     color: var(--pink-dark);
 }
-
-/* =========================
-   HERO / HOME
-   ========================= */
 
 .hero {
     min-height: 78vh;
@@ -169,10 +157,6 @@ body {
     object-fit: cover;
 }
 
-/* =========================
-   GENERAL SECTIONS
-   ========================= */
-
 section {
     padding: 80px 7%;
 }
@@ -201,9 +185,6 @@ section {
     margin: 10px auto;
 }
 
-/* =========================
-   CATEGORY CARDS
-   ========================= */
 
 .categories {
     background: #fff;
@@ -253,10 +234,6 @@ section {
     font-size: 28px;
 }
 
-/* =========================
-   PRODUCTS
-   ========================= */
-
 .products-section {
     background: var(--pink-light);
 }
@@ -297,7 +274,6 @@ section {
     border-color: var(--pink-dark);
 }
 
-/* Product Grid */
 
 .products-grid {
     display: grid;
@@ -325,7 +301,6 @@ section {
     overflow: hidden;
 }
 
-/* مكان صورة المنتج */
 .product-image img {
     width: 100%;
     height: 100%;
@@ -375,9 +350,6 @@ section {
     background: var(--pink-dark);
 }
 
-/* =========================
-   ABOUT
-   ========================= */
 
 .about {
     background: white;
@@ -397,7 +369,6 @@ section {
     overflow: hidden;
 }
 
-/* مكان صورة الـ About */
 .about-image img {
     width: 100%;
     height: 100%;
@@ -420,10 +391,6 @@ section {
     color: var(--gray);
     margin-bottom: 15px;
 }
-
-/* =========================
-   NEWSLETTER
-   ========================= */
 
 .newsletter {
     background: linear-gradient(
@@ -470,10 +437,6 @@ section {
     border-radius: 30px;
     cursor: pointer;
 }
-
-/* =========================
-   FOOTER
-   ========================= */
 
 footer {
     background: #2f2528;
@@ -529,10 +492,6 @@ footer a:hover {
     color: #aaa;
     font-size: 13px;
 }
-
-/* =========================
-   RESPONSIVE
-   ========================= */
 
 @media (max-width: 1000px) {
 
