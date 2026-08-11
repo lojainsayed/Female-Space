@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Female Space | Hair Care
+    </title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo-link" href="index.html">
+                <img alt="Female SPACE" class="logo-image" src="logo_web.png" />
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn">
+                        Face
+                        <span>
+                            ⌄
+                        </span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="face.html">
+                            All Face Care
+                        </a>
+                        <a href="face.html?type=acne">
+                            Acne
+                        </a>
+                        <a href="face.html?type=dry">
+                            Dry Skin
+                        </a>
+                        <a href="face.html?type=oily">
+                            Oily Skin
+                        </a>
+                        <a href="face.html?type=sensitive">
+                            Sensitive Skin
+                        </a>
+                        <a href="face.html?type=combination">
+                            Combination Skin
+                        </a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn">
+                        Body
+                        <span>
+                            ⌄
+                        </span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="body.html">
+                            All Body Care
+                        </a>
+                        <a href="body.html?type=dry">
+                            Dry Body
+                        </a>
+                        <a href="body.html?type=acne">
+                            Body Acne
+                        </a>
+                        <a href="body.html?type=sensitive">
+                            Sensitive Skin
+                        </a>
+                        <a href="body.html?type=moisturizing">
+                            Moisturizing
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="hair.html">
+                        Hair
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button aria-label="Search" class="nav-icon">
+                    &telrec;
+                </button>
+                <a class="signup-link" href="signup.html">
+                    Sign Up
+                </a>
+                <a class="cart" href="#">
+                    Cart
+                    <span class="cart-count" id="cartCount">
+                        0
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="category-page-hero">
+            <p>
+                FEMALE SPACE &bull; HAIR
+            </p>
+            <h1>
+                Hair Care
+            </h1>
+            <p>
+                Discover products to cleanse, nourish and care for your hair.
+            </p>
+        </section>
+        <section class="category-products-section">
+            <div class="category-products-header">
+                <div class="section-title">
+                    <p>
+                        OUR COLLECTION
+                    </p>
+                    <h2>
+                        Hair Care Products
+                    </h2>
+                </div>
+                <select aria-label="Sort products" class="category-sort" id="productSort">
+                    <option value="default">
+                        Sort By
+                    </option>
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+                    <option value="name">
+                        Name
+                    </option>
+                </select>
+            </div>
+            <div class="category-product-grid products-grid" id="productsGrid">
+                <article class="product-card" data-name="Elvive Hyaluron Moisture Shampoo &ndash; Purple 400ml"
+                    data-price="201.00">
+                    <div class="product-image">
+                        <img alt="Elvive Hyaluron Moisture Shampoo &ndash; Purple 400ml"
+                            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            L&rsquo;Or&eacute;al Elvive
+                        </span>
+                        <h3 class="product-name">
+                            Elvive Hyaluron Moisture Shampoo &ndash; Purple 400ml
+                        </h3>
+                        <p class="product-description">
+                            A moisturizing shampoo designed to help dry hair feel softer and more hydrated.
+                        </p>
+                        <div class="product-bottom">
+                            <strong class="price">
+                                201.00 EGP
+                            </strong>
+                            <button class="add-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card"
+                    data-name="Hair Care Routine &ndash; Shampoo &amp; Conditioner + Hair Cream + Hair Mask"
+                    data-price="640.00">
+                    <div class="product-image">
+                        <img alt="Hair Care Routine &ndash; Shampoo &amp; Conditioner + Hair Cream + Hair Mask"
+                            src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            Hair Care
+                        </span>
+                        <h3 class="product-name">
+                            Hair Care Routine &ndash; Shampoo &amp; Conditioner + Hair Cream + Hair Mask
+                        </h3>
+                        <p class="product-description">
+                            A complete routine for dry and damaged hair with four essential care products.
+                        </p>
+                        <div class="product-bottom">
+                            <strong class="price">
+                                640.00 EGP
+                            </strong>
+                            <button class="add-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-name="Hair Mask Pouch with Aloe Vera &amp; Silk Proteins 250ml"
+                    data-price="76.50">
+                    <div class="product-image">
+                        <img alt="Hair Mask Pouch with Aloe Vera &amp; Silk Proteins 250ml"
+                            src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&amp;fit=crop&amp;w=700&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            Hair Care
+                        </span>
+                        <h3 class="product-name">
+                            Hair Mask Pouch with Aloe Vera &amp; Silk Proteins 250ml
+                        </h3>
+                        <p class="product-description">
+                            A nourishing hair mask with aloe vera and silk proteins for a softer feel.
+                        </p>
+                        <div class="product-bottom">
+                            <strong class="price">
+                                76.50 EGP
+                            </strong>
+                            <button class="add-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card"
+                    data-name="Groovy Growth Hair Booster Bundle &ndash; Shampoo + Conditioner + Hair Mask"
+                    data-price="932.00">
+                    <div class="product-image">
+                        <img alt="Groovy Growth Hair Booster Bundle &ndash; Shampoo + Conditioner + Hair Mask"
+                            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&amp;fit=crop&amp;w=700&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            Groovy Growth
+                        </span>
+                        <h3 class="product-name">
+                            Groovy Growth Hair Booster Bundle &ndash; Shampoo + Conditioner + Hair Mask
+                        </h3>
+                        <p class="product-description">
+                            A complete hair booster bundle designed to strengthen and nourish the hair.
+                        </p>
+                        <div class="product-bottom">
+                            <strong class="price">
+                                932.00 EGP
+                            </strong>
+                            <button class="add-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="category-note">
+                <p>
+                    Find everything you need for your hair care routine &mdash; all in one place.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>

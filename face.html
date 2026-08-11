@@ -1,247 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Female Space | Face Care</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Female Space | Face Care
+    </title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo-link" href="index.html">
+                <img alt="Female SPACE" class="logo-image" src="logo_web.png" />
+            </a>
 
-<header class="header">
-    <nav class="navbar">
-
-        <a href="index.html" class="logo">
-            <span>FEMALE</span>
-            <small>SPACE</small>
-        </a>
-
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-
-            <div class="dropdown">
-                <button class="dropdown-btn">
-                    Face <span>⌄</span>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn">
+                        Face
+                        <span>
+                            ⌄
+                        </span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="face.html">
+                            All Face Care
+                        </a>
+                        <a href="face.html?type=acne">
+                            Acne
+                        </a>
+                        <a href="face.html?type=dry">
+                            Dry Skin
+                        </a>
+                        <a href="face.html?type=oily">
+                            Oily Skin
+                        </a>
+                        <a href="face.html?type=sensitive">
+                            Sensitive Skin
+                        </a>
+                        <a href="face.html?type=combination">
+                            Combination Skin
+                        </a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn">
+                        Body
+                        <span>
+                            ⌄
+                        </span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="body.html">
+                            All Body Care
+                        </a>
+                        <a href="body.html?type=dry">
+                            Dry Body
+                        </a>
+                        <a href="body.html?type=acne">
+                            Body Acne
+                        </a>
+                        <a href="body.html?type=sensitive">
+                            Sensitive Skin
+                        </a>
+                        <a href="body.html?type=moisturizing">
+                            Moisturizing
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="hair.html">
+                        Hair
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button aria-label="Search" class="nav-icon">
+                    &telrec;
                 </button>
-
-                <div class="dropdown-content">
-                    <a href="#cleansers">Cleansers</a>
-                    <a href="#moisturizers">Moisturizers</a>
-                    <a href="#serums">Serums</a>
-                    <a href="#acne">Acne Care</a>
-                    <a href="#sunscreen">Sunscreen</a>
-                    <a href="#masks">Face Masks</a>
-                </div>
+                <a class="signup-link" href="signup.html">
+                    Sign Up
+                </a>
+                <a class="cart" href="#">
+                    Cart
+                    <span class="cart-count" id="cartCount">
+                        0
+                    </span>
+                </a>
             </div>
-
-            <div class="dropdown">
-                <button class="dropdown-btn">
-                    Body <span>⌄</span>
-                </button>
-
-                <div class="dropdown-content">
-                    <a href="#">Body Wash</a>
-                    <a href="#">Body Lotion</a>
-                    <a href="#">Body Scrub</a>
-                    <a href="#">Body Care</a>
+        </nav>
+    </header>
+    <main>
+        <section class="category-page-hero">
+            <p>
+                FEMALE SPACE &bull; FACE
+            </p>
+            <h1>
+                Face Care
+            </h1>
+            <p>
+                Everything you need for a simple, beautiful skincare routine.
+            </p>
+        </section>
+        <section class="category-products-section">
+            <div class="category-products-header">
+                <div class="section-title">
+                    <p>
+                        OUR COLLECTION
+                    </p>
+                    <h2>
+                        Face Care Products
+                    </h2>
                 </div>
+                <select aria-label="Sort products" class="category-sort" id="productSort">
+                    <option value="default">
+                        Sort By
+                    </option>
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+                    <option value="name">
+                        Name
+                    </option>
+                </select>
             </div>
-
-            <a href="#">Hair Care</a>
-            <a href="#">About</a>
-        </div>
-
-        <div class="nav-actions">
-            <input type="text" id="searchInput" placeholder="Search">
-            <span id="cartCount">0</span>
-        </div>
-
-    </nav>
-</header>
-
-<main>
-
-    <section class="page-hero">
-        <h1>Face Care</h1>
-        <p>Discover your perfect skincare routine</p>
-    </section>
-
-    <section class="products-section">
-
-        <div class="products-header">
-            <div>
-                <h2>Face Products</h2>
-                <p>Shop our skincare collection</p>
+            <div class="category-product-grid products-grid" id="productsGrid">
+                <article class="product-card" data-price="299" data-skin="oily acne" id="cleansers">
+                    <div class="product-image">
+                        <img alt="Cleansing Product"
+                            src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&amp;fit=crop&amp;w=500&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            CeraVe
+                        </span>
+                        <h3 class="product-name">
+                            Foaming Facial Cleanser
+                        </h3>
+                        <p class="product-description">
+                            Gentle cleanser for normal to oily skin.
+                        </p>
+                        <strong class="price">
+                            299 EGP
+                        </strong>
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card" data-price="349" data-skin="dry sensitive" id="moisturizers">
+                    <div class="product-image">
+                        <img alt="Moisturizer"
+                            src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&amp;fit=crop&amp;w=500&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            CeraVe
+                        </span>
+                        <h3 class="product-name">
+                            Moisturizing Cream
+                        </h3>
+                        <p class="product-description">
+                            Rich hydration for dry and sensitive skin.
+                        </p>
+                        <strong class="price">
+                            349 EGP
+                        </strong>
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card" data-price="420" data-skin="combination oily" id="serums">
+                    <div class="product-image">
+                        <img alt="Face Serum"
+                            src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&amp;fit=crop&amp;w=500&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            Eva
+                        </span>
+                        <h3 class="product-name">
+                            Hydrating Face Serum
+                        </h3>
+                        <p class="product-description">
+                            Lightweight serum for a fresh and hydrated complexion.
+                        </p>
+                        <strong class="price">
+                            420 EGP
+                        </strong>
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card" data-price="389" data-skin="oily acne" id="acne">
+                    <div class="product-image">
+                        <img alt="Acne Care"
+                            src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&amp;fit=crop&amp;w=500&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            Eva
+                        </span>
+                        <h3 class="product-name">
+                            Acne Control Gel
+                        </h3>
+                        <p class="product-description">
+                            Daily care for oily and blemish-prone skin.
+                        </p>
+                        <strong class="price">
+                            389 EGP
+                        </strong>
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card" data-price="450" data-skin="oily combination sensitive" id="sunscreen">
+                    <div class="product-image">
+                        <img alt="Sunscreen"
+                            src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&amp;fit=crop&amp;w=500&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            CeraVe
+                        </span>
+                        <h3 class="product-name">
+                            Facial Sunscreen
+                        </h3>
+                        <p class="product-description">
+                            Daily face protection with a lightweight texture.
+                        </p>
+                        <strong class="price">
+                            450 EGP
+                        </strong>
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card" data-price="199" data-skin="dry sensitive" id="masks">
+                    <div class="product-image">
+                        <img alt="Face Mask"
+                            src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&amp;fit=crop&amp;w=500&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            Eva
+                        </span>
+                        <h3 class="product-name">
+                            Hydrating Face Mask
+                        </h3>
+                        <p class="product-description">
+                            Refreshing mask for soft and moisturized skin.
+                        </p>
+                        <strong class="price">
+                            199 EGP
+                        </strong>
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card" data-price="520" data-skin="dry sensitive">
+                    <div class="product-image">
+                        <img alt="CeraVe Skincare"
+                            src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&amp;fit=crop&amp;w=500&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            CeraVe
+                        </span>
+                        <h3 class="product-name">
+                            Hydrating Facial Cleanser
+                        </h3>
+                        <p class="product-description">
+                            Gentle daily cleanser for dry skin.
+                        </p>
+                        <strong class="price">
+                            520 EGP
+                        </strong>
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card" data-price="275" data-skin="oily combination acne">
+                    <div class="product-image">
+                        <img alt="Eva Skincare"
+                            src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&amp;fit=crop&amp;w=500&amp;q=80" />
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">
+                            Eva
+                        </span>
+                        <h3 class="product-name">
+                            Purifying Face Wash
+                        </h3>
+                        <p class="product-description">
+                            Cleansing care for oily and combination skin.
+                        </p>
+                        <strong class="price">
+                            275 EGP
+                        </strong>
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
             </div>
-
-            <select id="faceSort">
-                <option value="default">Sort By</option>
-                <option value="low">Price: Low to High</option>
-                <option value="high">Price: High to Low</option>
-                <option value="name">Name</option>
-            </select>
-        </div>
-
-        <div class="products-grid" id="faceProducts">
-
-            <article class="product-card"
-                id="cleansers"
-                data-skin="oily acne"
-                data-price="299">
-
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=500&q=80" alt="Cleansing Product">
-                </div>
-
-                <div class="product-info">
-                    <span class="brand">CeraVe</span>
-                    <h3 class="product-name">Foaming Facial Cleanser</h3>
-                    <p class="product-description">Gentle cleanser for normal to oily skin.</p>
-                    <strong class="price">299 EGP</strong>
-                    <button class="add-cart">Add to Cart</button>
-                </div>
-
-            </article>
-
-            <article class="product-card"
-                id="moisturizers"
-                data-skin="dry sensitive"
-                data-price="349">
-
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Moisturizer">
-                </div>
-
-                <div class="product-info">
-                    <span class="brand">CeraVe</span>
-                    <h3 class="product-name">Moisturizing Cream</h3>
-                    <p class="product-description">Rich hydration for dry and sensitive skin.</p>
-                    <strong class="price">349 EGP</strong>
-                    <button class="add-cart">Add to Cart</button>
-                </div>
-
-            </article>
-
-            <article class="product-card"
-                id="serums"
-                data-skin="combination oily"
-                data-price="420">
-
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=500&q=80" alt="Face Serum">
-                </div>
-
-                <div class="product-info">
-                    <span class="brand">Eva</span>
-                    <h3 class="product-name">Hydrating Face Serum</h3>
-                    <p class="product-description">Lightweight serum for a fresh and hydrated complexion.</p>
-                    <strong class="price">420 EGP</strong>
-                    <button class="add-cart">Add to Cart</button>
-                </div>
-
-            </article>
-
-            <article class="product-card"
-                id="acne"
-                data-skin="oily acne"
-                data-price="389">
-
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80" alt="Acne Care">
-                </div>
-
-                <div class="product-info">
-                    <span class="brand">Eva</span>
-                    <h3 class="product-name">Acne Control Gel</h3>
-                    <p class="product-description">Daily care for oily and blemish-prone skin.</p>
-                    <strong class="price">389 EGP</strong>
-                    <button class="add-cart">Add to Cart</button>
-                </div>
-
-            </article>
-
-            <article class="product-card"
-                id="sunscreen"
-                data-skin="oily combination sensitive"
-                data-price="450">
-
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=500&q=80" alt="Sunscreen">
-                </div>
-
-                <div class="product-info">
-                    <span class="brand">CeraVe</span>
-                    <h3 class="product-name">Facial Sunscreen</h3>
-                    <p class="product-description">Daily face protection with a lightweight texture.</p>
-                    <strong class="price">450 EGP</strong>
-                    <button class="add-cart">Add to Cart</button>
-                </div>
-
-            </article>
-
-            <article class="product-card"
-                id="masks"
-                data-skin="dry sensitive"
-                data-price="199">
-
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=500&q=80" alt="Face Mask">
-                </div>
-
-                <div class="product-info">
-                    <span class="brand">Eva</span>
-                    <h3 class="product-name">Hydrating Face Mask</h3>
-                    <p class="product-description">Refreshing mask for soft and moisturized skin.</p>
-                    <strong class="price">199 EGP</strong>
-                    <button class="add-cart">Add to Cart</button>
-                </div>
-
-            </article>
-
-            <article class="product-card"
-                data-skin="dry sensitive"
-                data-price="520">
-
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=500&q=80" alt="CeraVe Skincare">
-                </div>
-
-                <div class="product-info">
-                    <span class="brand">CeraVe</span>
-                    <h3 class="product-name">Hydrating Facial Cleanser</h3>
-                    <p class="product-description">Gentle daily cleanser for dry skin.</p>
-                    <strong class="price">520 EGP</strong>
-                    <button class="add-cart">Add to Cart</button>
-                </div>
-
-            </article>
-
-            <article class="product-card"
-                data-skin="oily combination acne"
-                data-price="275">
-
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80" alt="Eva Skincare">
-                </div>
-
-                <div class="product-info">
-                    <span class="brand">Eva</span>
-                    <h3 class="product-name">Purifying Face Wash</h3>
-                    <p class="product-description">Cleansing care for oily and combination skin.</p>
-                    <strong class="price">275 EGP</strong>
-                    <button class="add-cart">Add to Cart</button>
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-</main>
-
-<script src="js/script.js"></script>
-
+            <div class="category-note">
+                <p>
+                    Find everything you need for your face care routine &mdash; all in one place.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js">
+    </script>
 </body>
+
 </html>
