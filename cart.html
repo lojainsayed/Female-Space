@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart | Female SPACE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo-link">
+            <img src="logo_web.png" alt="Female SPACE" class="logo-image">
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="face.html">Face</a>
+            </li>
+
+            <li>
+                <a href="body.html">Body</a>
+            </li>
+
+            <li>
+                <a href="hair.html">Hair</a>
+            </li>
+
+        </ul>
+
+        <div class="nav-actions">
+
+            <a href="signup.html" class="account-link">
+                Sign Up
+            </a>
+
+            <a href="cart.html" class="cart">
+                Cart
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+    <main class="cart-page">
+
+        <div class="cart-header">
+
+            <span>YOUR SHOPPING BAG</span>
+
+            <h1>Your Cart</h1>
+
+            <p>
+                Review your beauty essentials before checkout.
+            </p>
+
+        </div>
+
+
+        <div class="cart-container">
+
+            <section class="cart-items" id="cartItems">
+
+            </section>
+
+            <aside class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">0 EGP</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">0 EGP</span>
+                </div>
+
+                <button class="checkout-btn">
+                    Checkout
+                </button>
+
+                <a href="index.html" class="continue-shopping">
+                    Continue Shopping
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
